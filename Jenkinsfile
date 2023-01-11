@@ -31,7 +31,7 @@ pipeline {
         stage("build docker image") {
             steps {
                 script {
-                    buildAndPushDockerImage()
+                    buildAndPushDockerImage("iamimran/java-maven-app:jma2.0")
                 }
             }
         }
